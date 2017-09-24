@@ -320,16 +320,6 @@ public class HuaweiUMMLParser {
         
         try{
             
-            //Expiry check 
-            Date expiryDate =  new GregorianCalendar(2017, Calendar.NOVEMBER, 01).getTime();
-            Date todayDate = new Date();  
-            //System.out.println(todayDate);
-            //System.out.println(expiryDate);
-            if(todayDate.after(expiryDate) ) {
-                System.out.println("Parser has expired. Please request new version from www.telecomhall.net");
-                System.exit(1);
-            }
-            
             
             //show help
             if(args.length != 2 || (args.length == 1 && args[0] == "-h")){
